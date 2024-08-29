@@ -30,7 +30,7 @@ Explore more about this exciting project in the detailed documentation below.
 
 ## Models
 
-![Models](https://github.com/user-attachments/assets/acb43800-ca45-41f8-8442-b195369191b8)
+![Models](https://github.com/user-attachments/assets/db9885c1-cd2e-424e-9e10-73f868d46861)
 
 ## Features
 
