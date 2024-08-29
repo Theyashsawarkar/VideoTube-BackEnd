@@ -1,102 +1,130 @@
-# YouTube + Twitter Backend 
+
+# VideoTube 📺
 
 ## Introduction
 
-This is a ``YOUTUBE + TWITTER`` backend project that covers allmost the functionalities of youtube 
-and also combines the tweet functionality from twitter into it. Find more about his project in the documentaion below.
+Welcome to the `VideoTube` project! 🌐
+This project seamlessly integrates the functionalities of YouTube
+with the tweeting capabilities of Twitter.
+Explore more about this exciting project in the detailed documentation below.
 
-## Important links
+### Important links
+<!--toc:start-->
 
-| Content            | Link                                                                        |
-| -------------------| ----------------------------------------------------------------------------|
-| API Documentation  | [click here](https://documenter.getpostman.com/view/28570926/2s9YsNdVwW)    |
-| Model              | [click here ](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)         |
+- [Features](#features)
+  - [User Management:](#user-management)
+  - [Video Management:](#video-management)
+  - [Tweet Management:](#tweet-management)
+  - [Subscription Management:](#subscription-management)
+  - [Playlist Management:](#playlist-management)
+  - [Like Management:](#like-management)
+  - [Comment Management:](#comment-management)
+  - [Dashboard:](#dashboard)
+  - [Health Check:](#health-check)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Contributing](#contributing)
+- [License](#license)
+
+<!--toc:end-->
+
+## Models
+
+![Models](https://github.com/user-attachments/assets/acb43800-ca45-41f8-8442-b195369191b8)
 
 ## Features
 
-### User Management:
+### User Management
 
-- Registration, login, logout, password reset
-- Profile management (avatar, cover image, details)
-- Watch history tracking
+  - Registration, login, logout, password reset
+  - Profile management (avatar, cover image, details)
+  - Watch history tracking
 
-### Video Management:
+### Video Management
 
-- Video upload and publishing
-- Video search, sorting, and pagination
-- Video editing and deletion
-- Visibility control (publish/unpublish)
+  - Video upload and publishing
+  - Video search, sorting, and pagination
+  - Video editing and deletion
+  - Visibility control (publish/unpublish)
 
-### Tweet Management:
+### Tweet Management
 
-- Tweet creation and publishing
-- Viewing user tweets
-- Updating and deleting tweets
+  - Tweet creation and publishing
+  - Viewing user tweets
+  - Updating and deleting tweets
 
-### Subscription Management:
+### Subscription Management
 
-- Subscribing to channels
-- Viewing subscriber and subscribed channel lists
+  - Subscribing to channels
+  - Viewing subscriber and subscribed channel lists
 
-### Playlist Management:
+### Playlist Management
 
-- Creating, updating, and deleting playlists
-- Adding and removing videos from playlists
-- Viewing user playlists
+  - Creating, updating, and deleting playlists
+  - Adding and removing videos from playlists
+  - Viewing user playlists
 
-### Like Management:
+### Like Management
 
-- Liking and unliking videos, comments, and tweets
-- Viewing liked videos
+  - Liking and unliking videos, comments, and tweets
+  - Viewing liked videos
 
-### Comment Management:
+### Comment Management
 
-- Adding, updating, and deleting comments on videos
+  - Adding, updating, and deleting comments on videos
 
-### Dashboard:
+### Dashboard
 
-- Viewing channel statistics (views, subscribers, videos, likes)
-- Accessing uploaded videos
+  - Viewing channel statistics (views, subscribers, videos, likes)
+  - Accessing uploaded videos
 
-### Health Check:
+### Health Check
 
-- Endpoint to verify the backend's health
+  - Endpoint to verify the backend's health
 
 ## Technologies Used
 
-- Node.js 
-- Express.js
-- MongoDB
-- Cloudinary (must have an account)
+  - Node.js
+  - Express.js
+  - MongoDB
+  - Cloudinary (must have an account)
 
 ## Installation and Setup
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/Hruthik-28/youtube-twitter.git
-    ```
+   ```bash
+   git clone https://github.com/Theyashsawarkar/VideoTube-Backend.git
+   ```
 
 2. **Install dependencies:**
 
-    ```bash
-    cd youtube-twitter
-    npm install
-    ```
+   ```bash
+   cd VideoTube-Backend
+   npm install
+   ```
 
 3. **Set up environment variables:**
-    Create a .env in root of project and fill in the required values in the .env file using .env.sample file
+   Create a .env in the root of the project and fill in the
+   required values using .env.sample file.
 
 4. **Start the server:**
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
+
+# Deployment Note
+
+  For the deployment of the backend application, it is crucial to deploy it on [Render](https://render.com/). Render maintains the state of the file system between builds and redeployments, which is essential for using disk storage with Multer.
+
+  If you choose to deploy the app using other services, consider these options:
+
+  - **Serverless Deployment**: Use Multer's memory storage since serverless platforms don't retain file system state between deployments.
+  - **Serverful Deployment**: Render is recommended to ensure the file system state is preserved, but other platforms might work if they support persistent storage.
 
 ## Contributing
 
-If you wish to contribute to this project, please feel free to contribute.
+  If you wish to contribute to this project,
+  feel free to join in and make it even better!
 
-## License
-
-This project is licensed under [ChaiAurCode](https://www.youtube.com/@chaiaurcode).
