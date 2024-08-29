@@ -94,13 +94,13 @@ Explore more about this exciting project in the detailed documentation below.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Theyashsawarkar/VideoTube-Backend.git
+   git clone git@github.com:Theyashsawarkar/VideoTube-BackEnd.git
    ```
 
 2. **Install dependencies:**
 
    ```bash
-   cd VideoTube-Backend
+   cd VideoTube-BackEnd
    npm install
    ```
 
